@@ -4,3 +4,11 @@
 # Created on: 2019-11-02
 # License: Unlicense
 # ---------------------------------------------------------------------------------
+
+from PyQt5 import QtWidgets, uic
+import sys
+
+app = QtWidgets.QApplication([])
+win = uic.loadUi('BasicGui.ui')
+win.sho()
+sys.exit(app.exec())
