@@ -4,8 +4,8 @@ block_cipher = None
 
 
 a = Analysis(['BasicGui.py'],
-             pathex=['C:\\Users\\z28bl\\PycharmProjects\\PythonTesting\\PyInstaller with Qt5'],
-             binaries=['C:\Users\z28bl\PycharmProjects\PythonTesting\venv2\Lib\site-packages\PyQt5\Qt\bin\Qt5Core.dll'],
+             pathex=[r'C:\\Users\\z28bl\\PycharmProjects\\PythonTesting\\PyInstaller with Qt5'],
+             binaries=[r'C:\Users\z28bl\PycharmProjects\PythonTesting\venv2\Lib\site-packages\PyQt5\Qt\bin\Qt5Core.dll'],
              datas=[],
              hiddenimports=[],
              hookspath=[],
