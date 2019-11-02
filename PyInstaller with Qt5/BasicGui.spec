@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['PyInstaller with Qt5\\BasicGui.py'],
-             pathex=['C:\\Users\\z28bl\\PycharmProjects\\PythonTesting'],
+a = Analysis(['BasicGui.py'],
+             pathex=['C:\\Users\\z28bl\\PycharmProjects\\PythonTesting\\PyInstaller with Qt5'],
              binaries=[],
              datas=[],
              hiddenimports=[],
