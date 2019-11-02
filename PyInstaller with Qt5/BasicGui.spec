@@ -2,10 +2,9 @@
 
 block_cipher = None
 
-
 a = Analysis(['BasicGui.py'],
              pathex=[r'C:\\Users\\z28bl\\PycharmProjects\\PythonTesting\\PyInstaller with Qt5'],
-             binaries=[r'C:\Users\z28bl\PycharmProjects\PythonTesting\venv2\Lib\site-packages\PyQt5\Qt\bin\Qt5Core.dll'],
+             binaries=[],
              datas=[],
              hiddenimports=[],
              hookspath=[],
@@ -15,8 +14,14 @@ a = Analysis(['BasicGui.py'],
              win_private_assemblies=False,
              cipher=block_cipher,
              noarchive=False)
+
+
+a.datas=[(HOMEPATH + '\\..\\PyQt5\\Qt\\bin\*', 'PyQt5\\Qt\\bin')],
+
+
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
+
 exe = EXE(pyz,
           a.scripts,
           a.binaries,
