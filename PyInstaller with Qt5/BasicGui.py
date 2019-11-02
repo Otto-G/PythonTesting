@@ -10,5 +10,5 @@ import sys
 
 app = QtWidgets.QApplication([])
 win = uic.loadUi('BasicGui.ui')
-win.sho()
+win.show()
 sys.exit(app.exec())
