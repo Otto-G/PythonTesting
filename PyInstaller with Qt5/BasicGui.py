@@ -8,12 +8,14 @@
 from PyQt5 import QtWidgets, uic
 import sys
 import os
+import logging
 
 
 # Translate asset paths to usable format for PyInstaller
 
 
 def resource_path(relative_path):
+    logging.debug("This is a message here")
     if hasattr(sys, '_MEIPASS'):
         # noinspection PyProtectedMember
         return os.path.join(sys._MEIPASS, relative_path)
